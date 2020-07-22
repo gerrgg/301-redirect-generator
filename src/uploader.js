@@ -45,7 +45,7 @@ const uploader = ( element ) => {
 
         array.forEach(row => {
             if( row[0].length && row[1].length ){
-                string += `301 Redirect ${row[0]} ${row[1]} \n`
+                string += `Redirect 301 ${row[0]} ${row[1]} \n`
             }
         });
 
