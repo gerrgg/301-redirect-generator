@@ -19,6 +19,7 @@ body i {
 }
 .container header .details {
   padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
 .container header a {
   color: #fff;
