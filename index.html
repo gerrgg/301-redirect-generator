@@ -7,25 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <title>301 Redirect Generator</title>
 </head>
-<body>
 
+<body>
     <div class="container">
         <header>
             <h1>301 Redirect Generator</h1>
-            <p>Greg "GERRG" Bastianelli</p>
+            <h5>Greg "GERRG" Bastianelli</h5>
+            <p class="details">
+                <a href="http://gerrg.com"><i class="fas fa-meh-blank"></i> GERRG.com</a> |
+                <a href="https://github.com/gerrgg/301-redirect-generator"><i class="fab fa-github"></i> Source Code</a> 
+            </p>
         </header>
 
-        <div id="301-redirect-generator">
-            <h3>Put your CSV here and click upload</h3>
-            <input id="file-input" type="file" name="file">
-            <button id="convert-button">Convert</button>
+        <div id="redirect-generator">
 
-            <textarea id="results">Your results will appear here</textarea>
+            <div class="form">
+                <h2>Put your CSV here and click generate</h2>
+                <input id="file-input" type="file" name="file">
+                <button id="convert-button">Generate</button>
+                <h5>Results</h6>
+                <textarea id="results">Your results will appear here</textarea>
+            </div>
 
+
+            <h3>Create a spreadsheet</h3>
             <p>Its easy, just create a two-column spreadsheet with old links in the first column and the new link in the second column.</p>
+            <p class="flair"><b> <i class="fas fa-file-csv fa-2x"></i> .csv files only please</b></p>
             <img src="img/ex1.jpg">
+
         </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>
