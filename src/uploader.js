@@ -17,12 +17,12 @@ const uploader = ( element ) => {
             let file = element.files[0]
 
             Papa.parse(file, {
-                header: true,
                 delimiter: ",",
                 complete: function(results) {
                     generate(results.data)
                 }
             })
+            
         } else {
             textarea.value = 'Make sure your are uploading a .csv file, please :)'
         }
@@ -41,9 +41,11 @@ const uploader = ( element ) => {
          */
         let string = '';
 
+        console.log( array )
+
         array.forEach(row => {
-            if( row.OLD.length && row.NEW.length ){
-                string += `301 Redirect ${row.OLD} ${row.NEW} \n`
+            if( row[0].length && row[1].length ){
+                string += `301 Redirect ${row[0]} ${row[1]} \n`
             }
         });
 
