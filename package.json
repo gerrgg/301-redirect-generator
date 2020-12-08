@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@fast-csv/parse": "^4.3.1"
+    "@fast-csv/parse": "^4.3.6"
   },
   "devDependencies": {
     "csv": "^5.3.2",
